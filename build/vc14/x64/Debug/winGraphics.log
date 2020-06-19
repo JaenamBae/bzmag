@@ -1,0 +1,23 @@
+﻿  main.cc
+  modelerview.cc
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(163): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(162): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(166): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(86): note: 'strcat' 선언을 참조하십시오.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(180): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(179): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(183): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(86): note: 'strcat' 선언을 참조하십시오.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(479): warning C4312: '형식 캐스트': 'int'에서 더 큰 'HDC'(으)로의 변환입니다.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(482): warning C4312: '형식 캐스트': 'int'에서 더 큰 'HDC'(으)로의 변환입니다.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(530): warning C4312: '형식 캐스트': 'int'에서 더 큰 'HWND'(으)로의 변환입니다.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(543): warning C4311: '형식 캐스트': 'HWND'에서 'int'(으)로 포인터가 잘립니다.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(543): warning C4302: '형식 캐스트': 'HWND'에서 'int'(으)로 잘립니다.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(721): warning C4311: '형식 캐스트': 'HDC'에서 'int'(으)로 포인터가 잘립니다.
+d:\development\projects\cpp\bzmag_new\code\bzmag\wingraphics\modelerview.cc(721): warning C4302: '형식 캐스트': 'HDC'에서 'int'(으)로 잘립니다.
+  modeleview_method.cc
+  platform_specific.cc
+  코드를 생성하고 있습니다...
+  winGraphics.vcxproj -> D:\Development\Projects\cpp\bzMag_new\x64\Debug\winGraphics.lib

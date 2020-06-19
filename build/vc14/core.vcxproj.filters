@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{682a2541-2c86-46c8-9fc9-187a24fc5dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="primitivetype">
+      <UniqueIdentifier>{88382366-517a-4fdd-ba07-79567d82656e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility">
+      <UniqueIdentifier>{2cb039e3-8b02-467b-8cc2-5089ac56829b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object">
+      <UniqueIdentifier>{6ace5570-cfb4-4930-ab97-854a3552d9cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object\method">
+      <UniqueIdentifier>{86c2ea61-b345-4fdd-a287-771d3fe68936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="object\property">
+      <UniqueIdentifier>{7f6eb78b-229c-403a-94af-d2cc849ee2c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exception">
+      <UniqueIdentifier>{e04bbffd-3ea4-4075-a4ce-b8c63088f970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel">
+      <UniqueIdentifier>{5051f1cc-da67-4167-b9ef-a8d5c8691dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel\module">
+      <UniqueIdentifier>{0f448ac6-bae6-4ae4-b412-0d798121a6d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unittest">
+      <UniqueIdentifier>{fbb923cb-cec1-4513-9b9a-be57ec4b2dfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\tinimxl">
+      <UniqueIdentifier>{3783e4ea-36ad-4618-8971-00553ee09981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialize">
+      <UniqueIdentifier>{49dcf1b8-9c87-46b7-9b5a-e8dc6b5b3f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utility\script">
+      <UniqueIdentifier>{6cc01d78-6c5b-4f36-bb29-86ec6585aba4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\bzmag\core\define.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\platform.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\string.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\typeid.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\object.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\type.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\method.h">
+      <Filter>object\method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\methodbinder.h">
+      <Filter>object\method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\methods.h">
+      <Filter>object\method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\parameter.h">
+      <Filter>object\method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\simplevariable.h">
+      <Filter>object\method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\variable.h">
+      <Filter>object\method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\variables.h">
+      <Filter>object\method</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\color.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\properties.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\property.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\tostring.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\stringconverter.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\singleton.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\singletonbase.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\singletonserver.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\simpleproperty.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\node.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\path.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\ref.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\nodeeventpublisher.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\nodeeventsubscriber.h">
+      <Filter>object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\simplepropertybinder.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\exception.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\builtinmodule.h">
+      <Filter>kernel\module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\module.h">
+      <Filter>kernel\module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\kernel.h">
+      <Filter>kernel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\testcaller.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\testcallerbase.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\testcase.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\testsuite.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\unittest.h">
+      <Filter>unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\currentsnapshot.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\tinyxml\tinystr.h">
+      <Filter>utility\tinimxl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\tinyxml\tinyxml.h">
+      <Filter>utility\tinimxl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\serializer.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\serializerevent.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\unifiedserializer.h">
+      <Filter>serialize</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\enumeration.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\enumproperty.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\enumpropertybinder.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\structproperty.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\compositeproperty.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\compositepropertybinder.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\containerproperty.h">
+      <Filter>object\property</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\cwnguard.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\scriptserver.h">
+      <Filter>utility\script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\tuple2.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\tuple3.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\vector2.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\vector3.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\primitivetype.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\uri.h">
+      <Filter>primitivetype</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\tokenizer.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\autoreleasepool.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\core\singleton3.h">
+      <Filter>utility</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\bzmag\core\string.cc">
+      <Filter>primitivetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\object.cc">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\object_method.cc">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\method.cc">
+      <Filter>object\method</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\variables.cc">
+      <Filter>object\method</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\color.cc">
+      <Filter>primitivetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\property.cc">
+      <Filter>object\property</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\tostring.cc">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\singletonserver.cc">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\node.cc">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\node_method.cc">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\path.cc">
+      <Filter>primitivetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\nodeeventpublisher.cc">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\exception.cc">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\builtinmodule.cc">
+      <Filter>kernel\module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\module.cc">
+      <Filter>kernel\module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\kernel.cc">
+      <Filter>kernel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\testsuite.cc">
+      <Filter>unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\tinyxml\tinystr.cpp">
+      <Filter>utility\tinimxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\tinyxml\tinyxml.cpp">
+      <Filter>utility\tinimxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\tinyxml\tinyxmlerror.cpp">
+      <Filter>utility\tinimxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\tinyxml\tinyxmlparser.cpp">
+      <Filter>utility\tinimxl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\unifiedserializer.cc">
+      <Filter>serialize</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\structproperty.cc">
+      <Filter>object\property</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\type.cc">
+      <Filter>object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\scriptserver.cc">
+      <Filter>utility\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\scriptserver_method.cc">
+      <Filter>utility\script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\uri.cc">
+      <Filter>primitivetype</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\tokenizer.cc">
+      <Filter>utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\core\autoreleasepool.cc">
+      <Filter>utility</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\bzmag\core\string.inl">
+      <Filter>primitivetype</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\type.inl">
+      <Filter>object</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\method.inl">
+      <Filter>object\method</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\methodbinder.inl">
+      <Filter>object\method</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\parameter.inl">
+      <Filter>object\method</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\simplevariable.inl">
+      <Filter>object\method</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\variables.inl">
+      <Filter>object\method</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\property.inl">
+      <Filter>object\property</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\singleton.inl">
+      <Filter>utility</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\singletonbase.inl">
+      <Filter>utility</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\simpleproperty.inl">
+      <Filter>object\property</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\node.inl">
+      <Filter>object</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\path.inl">
+      <Filter>primitivetype</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\ref.inl">
+      <Filter>utility</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\simplepropertybinder.inl">
+      <Filter>object\property</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\module.inl">
+      <Filter>kernel\module</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\kernel.inl">
+      <Filter>kernel</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\testcaller.inl">
+      <Filter>unittest</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\testcase.inl">
+      <Filter>unittest</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\testsuite.inl">
+      <Filter>unittest</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\currentsnapshot.inl">
+      <Filter>exception</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\enumproperty.inl">
+      <Filter>object\property</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\enumpropertybinder.inl">
+      <Filter>object\property</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\compositeproperty.inl">
+      <Filter>object\property</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\compositepropertybinder.inl">
+      <Filter>object\property</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\containerproperty.inl">
+      <Filter>object\property</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\cwnguard.inl">
+      <Filter>utility</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\tuple2.inl">
+      <Filter>primitivetype</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\tuple3.inl">
+      <Filter>primitivetype</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\uri.inl">
+      <Filter>primitivetype</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\core\singleton3.inl">
+      <Filter>utility</Filter>
+    </None>
+  </ItemGroup>
+</Project>

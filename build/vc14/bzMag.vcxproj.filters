@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\bzmag\bzMag\BufferDC.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\bzMag.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\bzMagDoc.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\bzMagTreeView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\bzMagView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\MainFrm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\MultiSelectTreeCtrl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\MultiSelectTreeView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\OutputWnd.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\PropertiesWnd.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\CreateCircleDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\CreateRectangleDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\GeomPropertyGridCtrl.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\PropGridSlider.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\DialogExpressions.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\DialogExprProperty.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzMag\DialogVariable.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\bzmag\bzMag\bzMag.aps" />
+    <None Include="..\..\code\bzmag\bzMag\bzMag.reg" />
+    <None Include="..\..\code\bzmag\bzMag\res\bzMag.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\bzMag\res\grip_closed.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\bzMag\res\grip_open.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\bzMag\res\loupe.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\bzMag\res\loupe_minus.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\bzMag\res\loupe_plus.cur">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\bzmag\bzMag\bzMag.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\bzMagDoc.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\bzMagTreeView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\bzMagView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\MainFrm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\MultiSelectTreeCtrl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\MultiSelectTreeView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\OutputWnd.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\PropertiesWnd.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\CreateCircleDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\CreateRectangleDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\GeomPropertyGridCtrl.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\PropGridSlider.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\DialogExpressions.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\DialogExprProperty.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzMag\DialogVariable.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\code\bzmag\bzMag\bzMag.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\code\bzmag\bzMag\ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\code\bzmag\bzMag\UserImages.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\bzMag.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\bzMagDoc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\output_wnd.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\output_wnd_hc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\properties.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\properties_hc.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\properties_wnd.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\properties_wnd_hc.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\Toolbar.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\Toolbar256.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\toolbar1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\bmp00001.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\..\code\bzmag\bzMag\res\toolbar_modeler.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

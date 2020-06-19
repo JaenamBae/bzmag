@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugStatic|Win32">
+      <Configuration>DebugStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugStatic|x64">
+      <Configuration>DebugStatic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseStatic|Win32">
+      <Configuration>ReleaseStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseStatic|x64">
+      <Configuration>ReleaseStatic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\bzmag\engine_test\graphics_test.cc" />
+    <ClCompile Include="..\..\code\bzmag\engine_test\main.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\bzmag\engine_test\graphics_test.h" />
+    <ClInclude Include="..\..\code\bzmag\engine_test\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\code\bzmag\engine_test\engine_test.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="core.vcxproj">
+      <Project>{a7b75b70-32dd-4b21-b78a-90d20abe6be3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="engine.vcxproj">
+      <Project>{2ac0e5fb-6c12-4c56-9305-0dd3eb4071f5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libagg.vcxproj">
+      <Project>{76e31be3-b158-4c2e-aa18-77ab875c9498}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libiconv.vcxproj">
+      <Project>{1704ea01-6b21-4362-9f1f-44d25cf2e0d7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libmuparser.vcxproj">
+      <Project>{9015b118-eb8a-4730-9c9d-b466adc68158}</Project>
+    </ProjectReference>
+    <ProjectReference Include="winGraphics.vcxproj">
+      <Project>{1069c220-eb40-4bb5-978b-6746923cf21a}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F60542BE-2435-42ED-AC96-F8F93DF635DB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>core_test</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>../../code;../../code/bzmag;../../code/external;../../code/external/agg;../code/external/libmuparser;$(BOOST_INCLUDEDIR);$(CGAL_DIR_x86)/include;$(CGAL_DIR_x86)/build/include;$(CGAL_DIR_x86)/auxiliary/gmp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(CGAL_DIR_x86)/build/lib/$(Configuration);$(CGAL_DIR_x86)/auxiliary/gmp/lib;$(BOOST_LIBRARYDIR_x86);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(PYTHON_DIR_x86);$(BOOST_LIBRARYDIR_x86);$(CGAL_DIR_x86)\auxiliary\gmp\lib;$(CGAL_DIR_x86)\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>../../code;../../code/bzmag;../../code/external;../../code/external/agg;../code/external/libmuparser;$(BOOST_INCLUDEDIR);$(CGAL_DIR_x64)/include;$(CGAL_DIR_x64)/build/include;$(CGAL_DIR_x64)/auxiliary/gmp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(CGAL_DIR_x64)/build/lib/$(Configuration);$(CGAL_DIR_x64)/auxiliary/gmp/lib;$(BOOST_LIBRARYDIR_x64);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(PYTHON_DIR_x64);$(BOOST_LIBRARYDIR_x64);$(CGAL_DIR_x64)\auxiliary\gmp\lib;$(CGAL_DIR_x64)\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>../../code;../../code/bzmag;../../code/external;../../code/external/agg;../code/external/libmuparser;$(BOOST_INCLUDEDIR);$(CGAL_DIR_x86)/include;$(CGAL_DIR_x86)/build/include;$(CGAL_DIR_x86)/auxiliary/gmp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(CGAL_DIR_x86)/build/lib/$(Configuration);$(CGAL_DIR_x86)/auxiliary/gmp/lib;$(BOOST_LIBRARYDIR_x86);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(PYTHON_DIR_x86);$(BOOST_LIBRARYDIR_x86);$(CGAL_DIR_x86)\auxiliary\gmp\lib;$(CGAL_DIR_x86)\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>../../code;../../code/bzmag;../../code/external;../../code/external/agg;../code/external/libmuparser;$(BOOST_INCLUDEDIR);$(CGAL_DIR_x64)/include;$(CGAL_DIR_x64)/build/include;$(CGAL_DIR_x64)/auxiliary/gmp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(CGAL_DIR_x64)/build/lib/$(Configuration);$(CGAL_DIR_x64)/auxiliary/gmp/lib;$(BOOST_LIBRARYDIR_x64);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(PYTHON_DIR_x64);$(BOOST_LIBRARYDIR_x64);$(CGAL_DIR_x64)\auxiliary\gmp\lib;$(CGAL_DIR_x64)\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>../../code;../../code/bzmag;../../code/external;../../code/external/agg;../code/external/libmuparser;$(BOOST_INCLUDEDIR);$(CGAL_DIR_x86)/include;$(CGAL_DIR_x86)/build/include;$(CGAL_DIR_x86)/auxiliary/gmp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(CGAL_DIR_x86)/build/lib/$(Configuration);$(CGAL_DIR_x86)/auxiliary/gmp/lib;$(BOOST_LIBRARYDIR_x86);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(PYTHON_DIR_x86);$(BOOST_LIBRARYDIR_x86);$(CGAL_DIR_x86)\auxiliary\gmp\lib;$(CGAL_DIR_x86)\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>../../code;../../code/bzmag;../../code/external;../../code/external/agg;../code/external/libmuparser;$(BOOST_INCLUDEDIR);$(CGAL_DIR_x64)/include;$(CGAL_DIR_x64)/build/include;$(CGAL_DIR_x64)/auxiliary/gmp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(CGAL_DIR_x64)/build/lib/$(Configuration);$(CGAL_DIR_x64)/auxiliary/gmp/lib;$(BOOST_LIBRARYDIR_x64);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(PYTHON_DIR_x64);$(BOOST_LIBRARYDIR_x64);$(CGAL_DIR_x64)\auxiliary\gmp\lib;$(CGAL_DIR_x64)\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>../../code;../../code/bzmag;../../code/external;../../code/external/agg;../code/external/libmuparser;$(BOOST_INCLUDEDIR);$(CGAL_DIR_x86)/include;$(CGAL_DIR_x86)/build/include;$(CGAL_DIR_x86)/auxiliary/gmp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(CGAL_DIR_x86)/build/lib/$(Configuration);$(CGAL_DIR_x86)/auxiliary/gmp/lib;$(BOOST_LIBRARYDIR_x86);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(PYTHON_DIR_x86);$(BOOST_LIBRARYDIR_x86);$(CGAL_DIR_x86)\auxiliary\gmp\lib;$(CGAL_DIR_x86)\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <OutDir>../../bin/$(Platform)/$(Configuration)/</OutDir>
+    <IncludePath>../../code;../../code/bzmag;../../code/external;../../code/external/agg;../code/external/libmuparser;$(BOOST_INCLUDEDIR);$(CGAL_DIR_x64)/include;$(CGAL_DIR_x64)/build/include;$(CGAL_DIR_x64)/auxiliary/gmp/include;$(IncludePath)</IncludePath>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(CGAL_DIR_x64)/build/lib/$(Configuration);$(CGAL_DIR_x64)/auxiliary/gmp/lib;$(BOOST_LIBRARYDIR_x64);$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(PYTHON_DIR_x64);$(BOOST_LIBRARYDIR_x64);$(CGAL_DIR_x64)\auxiliary\gmp\lib;$(CGAL_DIR_x64)\build\bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CGAL_USE_MPFR;CGAL_USE_GMP;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;ANSI_DECLARATORS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libmpfr-4.lib;libgmp-10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN64;_WINDOWS;CGAL_USE_MPFR;CGAL_USE_GMP;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;ANSI_DECLARATORS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libmpfr-4.lib;libgmp-10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CGAL_USE_MPFR;CGAL_USE_GMP;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;ANSI_DECLARATORS;_DEBUG;_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libmpfr-4.lib;libgmp-10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN64;_WINDOWS;CGAL_USE_MPFR;CGAL_USE_GMP;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;ANSI_DECLARATORS;_DEBUG;_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libmpfr-4.lib;libgmp-10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CGAL_USE_MPFR;CGAL_USE_GMP;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;ANSI_DECLARATORS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libmpfr-4.lib;libgmp-10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WIN64;_WINDOWS;CGAL_USE_MPFR;CGAL_USE_GMP;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;ANSI_DECLARATORS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DisableSpecificWarnings>4503</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libmpfr-4.lib;libgmp-10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CGAL_USE_MPFR;CGAL_USE_GMP;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;ANSI_DECLARATORS;NDEBUG;_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libmpfr-4.lib;libgmp-10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WIN64;_WINDOWS;CGAL_USE_MPFR;CGAL_USE_GMP;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;ANSI_DECLARATORS;NDEBUG;_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libmpfr-4.lib;libgmp-10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

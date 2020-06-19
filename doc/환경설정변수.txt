@@ -1,0 +1,14 @@
+작성일 : 2018.04.21
+작성자 : 배재남 (jaenam@dongyang.ac.kr)
+
+프로그램에서는 외부 라이브러리를 사용하는데
+아래를 참조하여 환경변수를 잡아 주어야지 정상 컴파일 된다.
+부스트라이브러리와 CGAL라이브러리가 필요함 Python 도 마찬가지
+
+BOOST_INCLUDEDIR = D:\Development\Library\boost\1_59_0
+BOOST_LIBRARYDIR = D:\Development\Library\boost\1_59_0\lib32-msvc-14.0
+CGAL_DIR = D:\Development\Library\CGAL\4.7
+PYTHON_DIR = C:\Python27
+
+// 이하는 동적라이브러리 경로를 위함
+Path = %BOOST_LIBRARYDIR%;%CGAL_DIR%\auxiliary\gmp\lib;%CGAL_DIR%\build\bin

@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugStatic|Win32">
+      <Configuration>DebugStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugStatic|x64">
+      <Configuration>DebugStatic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseStatic|Win32">
+      <Configuration>ReleaseStatic</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseStatic|x64">
+      <Configuration>ReleaseStatic</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\external\agg\agg_alpha_mask_u8.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_arc.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_array.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_arrowhead.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_basics.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_bezier_arc.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_bitset_iterator.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_blur.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_bounding_rect.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_bspline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_clip_liang_barsky.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_color_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_color_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_config.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_adaptor_vcgen.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_adaptor_vpgen.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_bspline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_clip_polygon.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_clip_polyline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_close_polygon.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_concat.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_contour.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_curve.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_dash.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_gpc.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_marker.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_marker_adaptor.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_segmentator.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_shorten_path.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_smooth_poly1.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_stroke.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_transform.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_unclose_polygon.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_curves.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_dda_line.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_ellipse.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_ellipse_bresenham.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_embedded_raster_fonts.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_font_cache_manager.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_gamma_functions.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_gamma_lut.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_glyph_raster_bin.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_gradient_lut.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_gsv_text.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_image_accessors.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_image_filters.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_line_aa_basics.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_math.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_math_stroke.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_path_length.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_path_storage.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_path_storage_integer.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pattern_filters_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_amask_adaptor.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_rgb.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_rgb_packed.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_transposer.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_cells_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_compound_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_outline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_outline_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_scanline_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_sl_clip.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_base.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_markers.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_mclip.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_outline_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_outline_image.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_primitives.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_raster_text.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_scanline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rendering_buffer.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rendering_buffer_dynarow.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rounded_rect.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_bin.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_boolean_algebra.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_p.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_storage_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_storage_bin.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_u.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_shorten_path.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_simul_eq.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_allocator.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_converter.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gouraud.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gouraud_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gouraud_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gradient.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gradient_alpha.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_image_filter.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_image_filter_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_image_filter_rgb.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_image_filter_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_interpolator_adaptor.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_interpolator_linear.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_interpolator_persp.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_interpolator_trans.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_pattern_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_pattern_rgb.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_pattern_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_solid.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_subdiv_adaptor.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_affine.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_bilinear.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_double_path.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_perspective.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_single_path.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_viewport.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_warp_magnifier.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_bspline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_contour.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_dash.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_markers_term.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_smooth_poly1.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_stroke.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_vertex_sequence.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vertex_sequence.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vpgen_clip_polygon.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vpgen_clip_polyline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vpgen_segmentator.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_bezier_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_cbox_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_gamma_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_gamma_spline.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_polygon_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_rbox_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_scale_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_slider_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_spline_ctrl.h" />
+    <ClInclude Include="..\..\code\external\agg\gpc\gpc.h" />
+    <ClInclude Include="..\..\code\external\agg\platform\agg_platform_support.h" />
+    <ClInclude Include="..\..\code\external\agg\platform\win32\agg_win32_bmp.h" />
+    <ClInclude Include="..\..\code\external\agg\util\agg_color_conv.h" />
+    <ClInclude Include="..\..\code\external\agg\util\agg_color_conv_rgb16.h" />
+    <ClInclude Include="..\..\code\external\agg\util\agg_color_conv_rgb8.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\external\agg\agg_arc.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_arrowhead.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_bezier_arc.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_bspline.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_curves.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_embedded_raster_fonts.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_gsv_text.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_image_filters.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_line_aa_basics.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_line_profile_aa.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_rounded_rect.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_sqrt_tables.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_trans_affine.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_trans_double_path.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_trans_single_path.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_trans_warp_magnifier.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_bspline.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_contour.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_dash.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_markers_term.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_smooth_poly1.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_stroke.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vpgen_clip_polygon.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vpgen_clip_polyline.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vpgen_segmentator.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_bezier_ctrl.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_cbox_ctrl.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_gamma_ctrl.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_gamma_spline.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_polygon_ctrl.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_rbox_ctrl.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_scale_ctrl.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_slider_ctrl.cpp" />
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_spline_ctrl.cpp" />
+    <ClCompile Include="..\..\code\external\agg\gpc\gpc.c" />
+    <ClCompile Include="..\..\code\external\agg\platform\win32\agg_platform_support.cpp" />
+    <ClCompile Include="..\..\code\external\agg\platform\win32\agg_win32_bmp.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76E31BE3-B158-4C2E-AA18-77AB875C9498}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libagg</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../code/external/agg;../../code/external/agg/gpc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>../../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../code/external/agg;../../code/external/agg/gpc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <OutDir>../../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../code/external/agg;../../code/external/agg/gpc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">
+    <OutDir>../../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../code/external/agg;../../code/external/agg/gpc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../code/external/agg;../../code/external/agg/gpc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>../../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../code/external/agg;../../code/external/agg/gpc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
+    <OutDir>../../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../code/external/agg;../../code/external/agg/gpc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">
+    <OutDir>../../lib/$(Platform)/$(Configuration)/</OutDir>
+    <IntDir>../../intermediate/$(Platform)/$(ProjectName)/$(Configuration)/</IntDir>
+    <LibraryPath>../../lib/$(Platform)/$(Configuration);$(LibraryPath)</LibraryPath>
+    <IncludePath>../../code/external/agg;../../code/external/agg/gpc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>setlocal
+if exist "$(TargetDir)$(TargetName).dll" copy /Y "$(TargetDir)$(TargetName).dll" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if exist "$(TargetDir)$(TargetName).pdb" copy /Y "$(TargetDir)$(TargetName).pdb" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN64;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>setlocal
+if exist "$(TargetDir)$(TargetName).dll" copy /Y "$(TargetDir)$(TargetName).dll" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if exist "$(TargetDir)$(TargetName).pdb" copy /Y "$(TargetDir)$(TargetName).pdb" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>setlocal
+if exist "$(TargetDir)$(TargetName).dll" copy /Y "$(TargetDir)$(TargetName).dll" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if exist "$(TargetDir)$(TargetName).pdb" copy /Y "$(TargetDir)$(TargetName).pdb" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WIN64;_DEBUG;_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>setlocal
+if exist "$(TargetDir)$(TargetName).dll" copy /Y "$(TargetDir)$(TargetName).dll" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if exist "$(TargetDir)$(TargetName).pdb" copy /Y "$(TargetDir)$(TargetName).pdb" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>setlocal
+if exist "$(TargetDir)$(TargetName).dll" copy /Y "$(TargetDir)$(TargetName).dll" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if exist "$(TargetDir)$(TargetName).pdb" copy /Y "$(TargetDir)$(TargetName).pdb" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WIN64;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>setlocal
+if exist "$(TargetDir)$(TargetName).dll" copy /Y "$(TargetDir)$(TargetName).dll" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if exist "$(TargetDir)$(TargetName).pdb" copy /Y "$(TargetDir)$(TargetName).pdb" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+</Command>
+    </PostBuildEvent>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>setlocal
+if exist "$(TargetDir)$(TargetName).dll" copy /Y "$(TargetDir)$(TargetName).dll" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if exist "$(TargetDir)$(TargetName).pdb" copy /Y "$(TargetDir)$(TargetName).pdb" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>_WIN64;NDEBUG;_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>setlocal
+if exist "$(TargetDir)$(TargetName).dll" copy /Y "$(TargetDir)$(TargetName).dll" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+if exist "$(TargetDir)$(TargetName).pdb" copy /Y "$(TargetDir)$(TargetName).pdb" "../../bin/win32/$(Configuration)/"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

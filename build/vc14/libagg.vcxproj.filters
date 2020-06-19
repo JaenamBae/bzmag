@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\code\external\agg\agg_arc.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_arrowhead.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_bezier_arc.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_bspline.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_curves.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_embedded_raster_fonts.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_gsv_text.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_image_filters.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_line_aa_basics.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_line_profile_aa.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_rounded_rect.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_sqrt_tables.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_trans_affine.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_trans_double_path.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_trans_single_path.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_trans_warp_magnifier.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_bspline.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_contour.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_dash.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_markers_term.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_smooth_poly1.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vcgen_stroke.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vpgen_clip_polygon.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vpgen_clip_polyline.cpp" />
+    <ClCompile Include="..\..\code\external\agg\agg_vpgen_segmentator.cpp" />
+    <ClCompile Include="..\..\code\external\agg\platform\win32\agg_win32_bmp.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\platform\win32\agg_platform_support.cpp">
+      <Filter>platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_bezier_ctrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_cbox_ctrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_gamma_ctrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_gamma_spline.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_polygon_ctrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_rbox_ctrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_scale_ctrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_slider_ctrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\ctrl\agg_spline_ctrl.cpp">
+      <Filter>ctrl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\external\agg\gpc\gpc.c">
+      <Filter>gpc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\external\agg\agg_alpha_mask_u8.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_arc.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_array.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_arrowhead.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_basics.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_bezier_arc.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_bitset_iterator.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_blur.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_bounding_rect.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_bspline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_clip_liang_barsky.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_color_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_color_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_config.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_adaptor_vcgen.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_adaptor_vpgen.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_bspline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_clip_polygon.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_clip_polyline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_close_polygon.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_concat.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_contour.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_curve.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_dash.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_gpc.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_marker.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_marker_adaptor.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_segmentator.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_shorten_path.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_smooth_poly1.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_stroke.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_transform.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_conv_unclose_polygon.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_curves.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_dda_line.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_ellipse.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_ellipse_bresenham.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_embedded_raster_fonts.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_font_cache_manager.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_gamma_functions.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_gamma_lut.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_glyph_raster_bin.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_gradient_lut.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_gsv_text.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_image_accessors.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_image_filters.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_line_aa_basics.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_math.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_math_stroke.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_path_length.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_path_storage.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_path_storage_integer.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pattern_filters_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_amask_adaptor.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_rgb.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_rgb_packed.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_pixfmt_transposer.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_cells_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_compound_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_outline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_outline_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_scanline_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rasterizer_sl_clip.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_base.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_markers.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_mclip.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_outline_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_outline_image.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_primitives.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_raster_text.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_renderer_scanline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rendering_buffer.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rendering_buffer_dynarow.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_rounded_rect.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_bin.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_boolean_algebra.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_p.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_storage_aa.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_storage_bin.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_scanline_u.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_shorten_path.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_simul_eq.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_allocator.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_converter.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gouraud.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gouraud_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gouraud_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gradient.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_gradient_alpha.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_image_filter.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_image_filter_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_image_filter_rgb.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_image_filter_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_interpolator_adaptor.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_interpolator_linear.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_interpolator_persp.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_interpolator_trans.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_pattern_gray.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_pattern_rgb.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_pattern_rgba.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_solid.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_span_subdiv_adaptor.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_affine.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_bilinear.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_double_path.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_perspective.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_single_path.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_viewport.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_trans_warp_magnifier.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_bspline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_contour.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_dash.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_markers_term.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_smooth_poly1.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_stroke.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vcgen_vertex_sequence.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vertex_sequence.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vpgen_clip_polygon.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vpgen_clip_polyline.h" />
+    <ClInclude Include="..\..\code\external\agg\agg_vpgen_segmentator.h" />
+    <ClInclude Include="..\..\code\external\agg\platform\win32\agg_win32_bmp.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\platform\agg_platform_support.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_bezier_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_cbox_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_gamma_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_gamma_spline.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_polygon_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_rbox_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_scale_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_slider_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\ctrl\agg_spline_ctrl.h">
+      <Filter>ctrl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\gpc\gpc.h">
+      <Filter>gpc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\util\agg_color_conv_rgb16.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\util\agg_color_conv.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\external\agg\util\agg_color_conv_rgb8.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="platform">
+      <UniqueIdentifier>{6bb2de1a-3fc9-4798-a470-c060a8a59fb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ctrl">
+      <UniqueIdentifier>{69ae6b8f-7dce-4a00-bb36-26e4748cea9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{0feab22d-70d9-472a-9b91-7653b5183703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gpc">
+      <UniqueIdentifier>{419ec087-6082-4c07-b586-a0ef78edaafe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

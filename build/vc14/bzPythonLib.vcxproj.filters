@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\code\bzmag\bzmagPy\pythonscriptserver.cc">
+      <Filter>class</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzmagPy\python_common.cc">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzmagPy\python_func.cc">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzmagPy\python_node.cc">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\bzmagPy\python_object.cc">
+      <Filter>main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\bzmag\bzmagPy\python_extension.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\bzmagPy\pythonscriptserver.h">
+      <Filter>class</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="class">
+      <UniqueIdentifier>{83f3e284-44cf-47d9-a60d-9e3dce6ff03d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{63b35ceb-a20b-44c5-bd9b-9e0e97f66265}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

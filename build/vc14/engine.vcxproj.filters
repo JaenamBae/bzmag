@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="class">
+      <UniqueIdentifier>{eb43b29d-c498-4faa-ab9c-514611cadeb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{a0f1299a-e977-44f1-be30-b96b7794aa47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry">
+      <UniqueIdentifier>{587a5d43-85fc-4e27-9b23-4da8973b6a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\CoordinateSystemNode">
+      <UniqueIdentifier>{a4486ae6-5ca2-4bd4-a6f9-095c4f021bda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\VertexNode">
+      <UniqueIdentifier>{6e4a2db8-1279-4600-8742-f6077122dbc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\OperationNode">
+      <UniqueIdentifier>{f43f3338-7fca-48a7-b00a-9fc561a1f658}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\OperationNode\BooleanNode%28Abstract%29">
+      <UniqueIdentifier>{3e164c37-b7ee-429f-9c3c-1cfb6fd2b7d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\OperationNode\CloneFromNode">
+      <UniqueIdentifier>{12a881e4-e59e-41da-a536-65aa06e159ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\OperationNode\CloneToNode">
+      <UniqueIdentifier>{3ef8fa4c-3118-4a3b-85b3-d03d2d5fc462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\OperationNode\MoveNode">
+      <UniqueIdentifier>{0dbcf04d-54fd-4a47-a275-2db4eee07dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\OperationNode\RotateNode">
+      <UniqueIdentifier>{3ce3f284-fac5-4ad2-8979-139c3cc2d3ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\OperationNode\SubtractNode">
+      <UniqueIdentifier>{e6ebe2b3-bc51-4948-9f70-9c530c1b3c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\HeadNode">
+      <UniqueIdentifier>{df0c803c-5324-4e24-ac94-53f0bd8dcecb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Expression">
+      <UniqueIdentifier>{b40d7741-a3ec-4efc-aee1-c3b525391ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Converter">
+      <UniqueIdentifier>{d4117925-49ab-4173-877f-e3fc46b0825b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Materials">
+      <UniqueIdentifier>{7b7c92cc-18e3-48f4-a6a5-2dc46d8e8b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\GeomBaseNode%28Abstract%29">
+      <UniqueIdentifier>{7a698769-a973-4fe0-8927-bacba9d9e169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\PrimitiveNode">
+      <UniqueIdentifier>{44b3639e-fb5b-4a18-be1d-e6bc815392be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\PrimitiveNode\CircleNode">
+      <UniqueIdentifier>{64ebe3a1-8d46-4e42-960a-ecf92b8a6a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\PrimitiveNode\RectNode">
+      <UniqueIdentifier>{130f26a8-550f-4bf1-83fa-6be330de3d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\OperationNode\CoverLineNode">
+      <UniqueIdentifier>{902e29ae-665a-4b8b-942b-f7aed20ba8f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\Geometry\PrimitiveNode\CurveNode">
+      <UniqueIdentifier>{83621fd7-8510-4de5-aa78-b4076ca0b136}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\bzmag\engine\engine.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomcirclenode.h">
+      <Filter>class\Geometry\PrimitiveNode\CircleNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomcoverlinenode.h">
+      <Filter>class\Geometry\OperationNode\CoverLineNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomsubtractnode.h">
+      <Filter>class\Geometry\OperationNode\SubtractNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomheadnode.h">
+      <Filter>class\Geometry\HeadNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geombasenode.h">
+      <Filter>class\Geometry\GeomBaseNode%28Abstract%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geombooleannode.h">
+      <Filter>class\Geometry\OperationNode\BooleanNode%28Abstract%29</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomclonefromnode.h">
+      <Filter>class\Geometry\OperationNode\CloneFromNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomclonetonode.h">
+      <Filter>class\Geometry\OperationNode\CloneToNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomrectnode.h">
+      <Filter>class\Geometry\PrimitiveNode\RectNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\expression.h">
+      <Filter>class\Expression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geommovenode.h">
+      <Filter>class\Geometry\OperationNode\MoveNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\print_utils.h">
+      <Filter>class\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomrotatenode.h">
+      <Filter>class\Geometry\OperationNode\RotateNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geometric_entity.h">
+      <Filter>class\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\expressionserver.h">
+      <Filter>class\Expression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geom_to_path.h">
+      <Filter>class\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geom_to_polytriangle.h">
+      <Filter>class\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\polyholeshelper.h">
+      <Filter>class\Converter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\materialnode.h">
+      <Filter>class\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomvertex.h">
+      <Filter>class\Geometry\VertexNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\csnode.h">
+      <Filter>class\Geometry\CoordinateSystemNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\geomcurvenode.h">
+      <Filter>class\Geometry\PrimitiveNode\CurveNode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\bzmag\engine\main.cc">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomcirclenode.cc">
+      <Filter>class\Geometry\PrimitiveNode\CircleNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomcirclenode_method.cc">
+      <Filter>class\Geometry\PrimitiveNode\CircleNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomcoverlinenode.cc">
+      <Filter>class\Geometry\OperationNode\CoverLineNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomcoverlinenode_method.cc">
+      <Filter>class\Geometry\OperationNode\CoverLineNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomsubtractnode.cc">
+      <Filter>class\Geometry\OperationNode\SubtractNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomsubtractnode_method.cc">
+      <Filter>class\Geometry\OperationNode\SubtractNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomheadnode.cc">
+      <Filter>class\Geometry\HeadNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomheadnode_method.cc">
+      <Filter>class\Geometry\HeadNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geombasenode.cc">
+      <Filter>class\Geometry\GeomBaseNode%28Abstract%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geombooleannode.cc">
+      <Filter>class\Geometry\OperationNode\BooleanNode%28Abstract%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomclonefromnode.cc">
+      <Filter>class\Geometry\OperationNode\CloneFromNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomclonefromnode_method.cc">
+      <Filter>class\Geometry\OperationNode\CloneFromNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomclonetonode.cc">
+      <Filter>class\Geometry\OperationNode\CloneToNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomclonetonode_method.cc">
+      <Filter>class\Geometry\OperationNode\CloneToNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomrectnode.cc">
+      <Filter>class\Geometry\PrimitiveNode\RectNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomrectnode_method.cc">
+      <Filter>class\Geometry\PrimitiveNode\RectNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geommovenode.cc">
+      <Filter>class\Geometry\OperationNode\MoveNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geommovenode_method.cc">
+      <Filter>class\Geometry\OperationNode\MoveNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomrotatenode.cc">
+      <Filter>class\Geometry\OperationNode\RotateNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomrotatenode_method.cc">
+      <Filter>class\Geometry\OperationNode\RotateNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geombasenode_method.cc">
+      <Filter>class\Geometry\GeomBaseNode%28Abstract%29</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\expression.cc">
+      <Filter>class\Expression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\expression_method.cc">
+      <Filter>class\Expression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\expressionserver.cc">
+      <Filter>class\Expression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geom_to_path.cc">
+      <Filter>class\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geom_to_polytriangle.cc">
+      <Filter>class\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geom_to_polytriangle_method.cc">
+      <Filter>class\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\polyholeshelper.cc">
+      <Filter>class\Converter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\materialnode.cc">
+      <Filter>class\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\materialnode_method.cc">
+      <Filter>class\Materials</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomvertex.cc">
+      <Filter>class\Geometry\VertexNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomvertex_method.cc">
+      <Filter>class\Geometry\VertexNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\csnode.cc">
+      <Filter>class\Geometry\CoordinateSystemNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\csnode_method.cc">
+      <Filter>class\Geometry\CoordinateSystemNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomcurvenode.cc">
+      <Filter>class\Geometry\PrimitiveNode\CurveNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\geomcurvenode_method.cc">
+      <Filter>class\Geometry\PrimitiveNode\CurveNode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\bzmag\engine\geomcirclenode.inl">
+      <Filter>class\Geometry\PrimitiveNode\CircleNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomcoverlinenode.inl">
+      <Filter>class\Geometry\OperationNode\CoverLineNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomsubtractnode.inl">
+      <Filter>class\Geometry\OperationNode\SubtractNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomclonefromnode.inl">
+      <Filter>class\Geometry\OperationNode\CloneFromNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomclonetonode.inl">
+      <Filter>class\Geometry\OperationNode\CloneToNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomrectnode.inl">
+      <Filter>class\Geometry\PrimitiveNode\RectNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geommovenode.inl">
+      <Filter>class\Geometry\OperationNode\MoveNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomrotatenode.inl">
+      <Filter>class\Geometry\OperationNode\RotateNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomheadnode.inl">
+      <Filter>class\Geometry\HeadNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\expression.inl">
+      <Filter>class\Expression</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\materialnode.inl">
+      <Filter>class\Materials</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomvertex.inl">
+      <Filter>class\Geometry\VertexNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\csnode.inl">
+      <Filter>class\Geometry\CoordinateSystemNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\geomcurvenode.inl">
+      <Filter>class\Geometry\PrimitiveNode\CurveNode</Filter>
+    </None>
+  </ItemGroup>
+</Project>
