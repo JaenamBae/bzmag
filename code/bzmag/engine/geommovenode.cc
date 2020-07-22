@@ -163,25 +163,6 @@ void  GeomMoveNode::moveCurves(const Curves& lhs, Curves& rhs)
 }
 
 //----------------------------------------------------------------------------
-void  GeomMoveNode::moveVertices(const Vertices& lhs, Vertices& rhs)
-{
-    rhs.clear();
-
-    // Moving을 위한 참조좌표계 고려한 변위계산
-    Vector_2 disp = displacement();
-
-    Vertices::iterator it;
-    for (it = vertices_.begin(); it != vertices_.end(); ++it)
-    {
-        Traits_2::Point_2 v = *it;
-        Point_2 vv(CGAL::to_double(v.x()), CGAL::to_double(v.y()));
-        Point_2 move_vv = vv + disp;
-
-        rhs.emplace_back(Traits_2::Point_2(move_vv.x(), move_vv.y()));
-    }
-}
-
-//----------------------------------------------------------------------------
 bool GeomMoveNode::moveCurve(const X_monotone_curve_2& curve, Curve_2& moved_curve, const Vector_2& disp)
 {
     const X_monotone_curve_2& arc = curve;
@@ -313,6 +294,7 @@ bool GeomMoveNode::update()
         Polygon_set_2* geometry = parent->getPolyset();
         const Curves& curves = parent->getCurves();
         const Vertices& vertices = parent->getVertices();
+
         if (geometry)
         {
             // geometry_의 모든 포인트들을 dx, dy만큼 이동한 후 다시 만들어 냄
@@ -330,19 +312,8 @@ bool GeomMoveNode::update()
             }
             geometry_ = new_geometry;
         }
-        else if (curves.size() > 0)
-        {
-            Curves rotate_curves;
-            moveCurves(curves, rotate_curves);
-            curves_ = rotate_curves;
-        }
 
-        else if (vertices.size() > 0)
-        {
-            Vertices rotate_vertices;
-            moveVertices(vertices, rotate_vertices);
-            vertices_ = rotate_vertices;
-        }
+		// 점, 선은 GeomBaseNode 의 업데이트시 새로 인덱싱 된다
     }
 
     return GeomBaseNode::update();

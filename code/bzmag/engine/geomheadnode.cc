@@ -1,7 +1,10 @@
 #include "geomheadnode.h"
 #include "geombooleannode.h"
-#include "csnode.h"
-#include "geomvertex.h"
+
+#include "CSnode.h"
+#include "BCnode.h"
+#include "materialnode.h"
+
 #include "core/simplepropertybinder.h"
 #include "core/nodeeventpublisher.h"
 
@@ -36,6 +39,10 @@ void GeomHeadNode::setLastNode(GeomBaseNode* last)
 {
     lastNode_ = last;
 
+	// 해드노드가 참조하는 마지막 형상노드를 기반으로
+	// 형상을 만들기 위한 바운드리 객체(엔티티)를 재구성 한다.
+	//updateEntity();
+
     // head의 부모 (head노드의 부모는 boolean node일 수 있다)를 업데이트 한다. 
     // 동시에 부모의 자식노드 중 GeomHeadNode를 제외한
     // GeomNode를 상속한 자식 노드들이 업데이트 된다
@@ -56,9 +63,20 @@ Node* GeomHeadNode::getMaterialNode() const
 }
 
 //----------------------------------------------------------------------------
+bool GeomHeadNode::applyBC(uint64 index, BCNode* bc)
+{
+	BCs::iterator it = BCs_.find(index);
+	if (curves_.size() >= index) {
+		BCs_[index] = bc;
+		return true;
+	}
+	return false;
+}
+
+//----------------------------------------------------------------------------
 Polygon_set_2* GeomHeadNode::getPolyset()
 {
-    if (lastNode_) {
+    if (lastNode_.valid()) {
         return lastNode_->getPolyset();
     }
     else {
@@ -69,7 +87,7 @@ Polygon_set_2* GeomHeadNode::getPolyset()
 //-----------------------------------------------------------------------------
 const GeomHeadNode::Curves& GeomHeadNode::getCurves()
 {
-    if (lastNode_) {
+    if (lastNode_.valid()) {
         return lastNode_->getCurves();
     }
     else {
@@ -80,7 +98,7 @@ const GeomHeadNode::Curves& GeomHeadNode::getCurves()
 //-----------------------------------------------------------------------------
 const GeomHeadNode::Vertices& GeomHeadNode::getVertices()
 {
-    if (lastNode_) {
+    if (lastNode_.valid()) {
         return lastNode_->getVertices();
     }
     else {
@@ -91,7 +109,7 @@ const GeomHeadNode::Vertices& GeomHeadNode::getVertices()
 //----------------------------------------------------------------------------
 bool GeomHeadNode::hitTest(float64 x, float64 y)
 {
-    if (lastNode_) {
+    if (lastNode_.valid()) {
         return lastNode_->hitTest(x, y);
     }
     else {

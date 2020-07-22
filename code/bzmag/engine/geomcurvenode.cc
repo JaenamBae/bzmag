@@ -5,10 +5,23 @@
 #include "core/simplepropertybinder.h"
 #include "core/nodeeventpublisher.h"
 
+#include <CGAL/Circular_kernel_intersections.h>
+#include <CGAL/Circular_arc_point_2.h>
+
 using namespace bzmag;
 using namespace bzmag::engine;
 
+typedef CGAL::Point_2<K>                 Pt2;
+typedef CGAL::Circle_2<K>                Circ2;
+typedef CGAL::Line_arc_2<K>              LineArc2;
+typedef CGAL::Circular_arc_2<K>          CircleArc2;
+typedef CGAL::CK2_Intersection_traits<K, Circ2, LineArc2>::type InterResLine;
+typedef CGAL::CK2_Intersection_traits<K, Circ2, CircleArc2>::type InterResCircle;
+
 IMPLEMENT_CLASS(GeomCurveNode, GeomBaseNode);
+
+
+float64 GeomCurveNode::torr_ = 1e-12;
 
 //----------------------------------------------------------------------------
 GeomCurveNode::GeomCurveNode() : sstart_("0,0"), send_("0,0"), smid_("")
@@ -111,6 +124,55 @@ bool GeomCurveNode::setParameters(const String& start, const String& end, const 
     smid_ = mid;
 
     return update();
+}
+
+//----------------------------------------------------------------------------
+bool GeomCurveNode::pointOnCurve(float64 x, float64 y) const
+{
+    Curves::const_iterator it;
+    for (it = curves_.begin(); it != curves_.end(); ++it)
+    {
+        const X_monotone_curve_2& curve = *it;
+
+        Traits_2::Point_2 source = curve.source();
+        Traits_2::Point_2 target = curve.target();
+
+        // 오차범위 인정을 위한 포인트에 해당하는 원
+        Circ2 c(Pt2(x, y), torr_*torr_);
+
+        // curve의 시작점 끝점
+        Pt2 ss(CGAL::to_double(source.x()), CGAL::to_double(source.y()));
+        Pt2 tt(CGAL::to_double(target.x()), CGAL::to_double(target.y()));
+
+        if (curve.is_linear())
+        {
+            std::vector<InterResLine> output;
+            LineArc2 l(ss, tt);
+            CGAL::intersection(c, l, std::back_inserter(output));
+
+            return (output.size() > 0) ? true : false;
+        }
+        else
+        {
+            // 커브의 Supporting Circle 추출
+            Circle_2 circle = curve.supporting_circle();
+            NT sqr_radii = circle.squared_radius();
+            Point_2 center = circle.center();
+            Pt2 cc(center.x(), center.y());
+            Circ2 supporting_circle(cc, sqr_radii);
+            CircleArc2 a(supporting_circle, ss, tt);
+
+
+            // 아래 intersection 함수가 예전 코딩시(2016.05.25)에는 두번째 줄이 에러없이 컴파일 되었고
+            // 지금(2016.07.25)은 첫번째 줄이 에러없이 컴파일 됨
+            // 조금 이상하니 주의!!
+            std::vector<InterResCircle> output;
+            CGAL::intersection(a, c, std::back_inserter(output));
+
+            return (output.size() > 0) ? true : false;
+        }
+    }
+    return false;
 }
 
 //----------------------------------------------------------------------------

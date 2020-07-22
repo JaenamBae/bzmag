@@ -1,0 +1,11 @@
+밍기 원본에서는 memory leak이 발생했었음
+
+variable class의 문제였음
+
+variable들을 관리하는 클래스가 variables이란 클래스인데
+
+이 클래스의 소멸자에서 생성된 variable들을 삭제하게 되어 있음
+
+항상 variable class 원본형식으로 delete하게 됨
+
+variable class의 소멸자가 virtual 로 선언되어 있어야 하는데 그렇지 않았음

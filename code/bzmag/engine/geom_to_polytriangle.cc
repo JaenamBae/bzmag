@@ -654,7 +654,6 @@ GeomToPolyTriangle::approximatePolygon(const Polygon_2& polygon,
                                      + (ss.y_ - tt.y_)*(ss.y_ - tt.y_));
             int num_seg = (int)(line_length / base_length  + 0.5);
             if(num_seg < 1) num_seg = 1;
-            if (num_seg % 2 == 1) num_seg = num_seg + 1;
 
             // 라인을 세그멘테이션 한다
             Vector2 p1(ss);
@@ -712,8 +711,7 @@ float64 GeomToPolyTriangle::approximate_double(float64 val) const
     precisionValue << std::fixed << val << std::endl;
     new_val = std::stod(precisionValue.str());
 
-    //return new_val;
-    return val;
+    return new_val;
 }
 
 //-----------------------------------------------------------------------------

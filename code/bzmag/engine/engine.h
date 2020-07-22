@@ -1,7 +1,6 @@
 #pragma once
 
 #include "geomheadnode.h"
-#include "geomvertex.h"
 #include "geomcurvenode.h"
 #include "geomcirclenode.h"
 #include "geomrectnode.h"
@@ -11,9 +10,10 @@
 #include "geomclonefromnode.h"
 #include "geommovenode.h"
 #include "geomrotatenode.h"
-#include "csnode.h"
-#include "expressionserver.h"
+#include "CSnode.h"
+#include "BCnode.h"
 #include "materialnode.h"
+#include "expressionserver.h"
 #include "geom_to_polytriangle.h"
 
 

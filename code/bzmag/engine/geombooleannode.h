@@ -17,7 +17,7 @@ namespace engine
     class GeomBooleanNode : public GeomBaseNode
     {
     public:
-        typedef std::list<GeomHeadNode*> ToolNodes;
+        typedef std::list<Ref<GeomHeadNode>> ToolNodes;
         typedef ToolNodes::iterator ToolIter;
 
     public:

@@ -35,6 +35,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\code\bzmag\engine\BCnode.cc" />
+    <ClCompile Include="..\..\code\bzmag\engine\BCnode_method.cc" />
     <ClCompile Include="..\..\code\bzmag\engine\expression.cc" />
     <ClCompile Include="..\..\code\bzmag\engine\expressionserver.cc" />
     <ClCompile Include="..\..\code\bzmag\engine\expression_method.cc" />
@@ -63,8 +65,6 @@
     <ClCompile Include="..\..\code\bzmag\engine\geomrotatenode_method.cc" />
     <ClCompile Include="..\..\code\bzmag\engine\geomsubtractnode.cc" />
     <ClCompile Include="..\..\code\bzmag\engine\geomsubtractnode_method.cc" />
-    <ClCompile Include="..\..\code\bzmag\engine\geomvertex.cc" />
-    <ClCompile Include="..\..\code\bzmag\engine\geomvertex_method.cc" />
     <ClCompile Include="..\..\code\bzmag\engine\geom_to_polytriangle.cc" />
     <ClCompile Include="..\..\code\bzmag\engine\geom_to_polytriangle_method.cc" />
     <ClCompile Include="..\..\code\bzmag\engine\main.cc" />
@@ -74,6 +74,7 @@
     <ClCompile Include="..\..\code\bzmag\engine\polyholeshelper.cc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\bzmag\engine\BCnode.h" />
     <ClInclude Include="..\..\code\bzmag\engine\expression.h" />
     <ClInclude Include="..\..\code\bzmag\engine\expressionserver.h" />
     <ClInclude Include="..\..\code\bzmag\engine\geombooleannode.h" />
@@ -91,7 +92,6 @@
     <ClInclude Include="..\..\code\bzmag\engine\geomrectnode.h" />
     <ClInclude Include="..\..\code\bzmag\engine\geomrotatenode.h" />
     <ClInclude Include="..\..\code\bzmag\engine\geomsubtractnode.h" />
-    <ClInclude Include="..\..\code\bzmag\engine\geomvertex.h" />
     <ClInclude Include="..\..\code\bzmag\engine\geom_to_polytriangle.h" />
     <ClInclude Include="..\..\code\bzmag\engine\geom_to_path.h" />
     <ClInclude Include="..\..\code\bzmag\engine\materialnode.h" />
@@ -99,6 +99,7 @@
     <ClInclude Include="..\..\code\bzmag\engine\print_utils.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\code\bzmag\engine\BCnode.inl" />
     <None Include="..\..\code\bzmag\engine\expression.inl" />
     <None Include="..\..\code\bzmag\engine\geomcirclenode.inl" />
     <None Include="..\..\code\bzmag\engine\geomclonefromnode.inl" />
@@ -111,7 +112,6 @@
     <None Include="..\..\code\bzmag\engine\geomrectnode.inl" />
     <None Include="..\..\code\bzmag\engine\geomrotatenode.inl" />
     <None Include="..\..\code\bzmag\engine\geomsubtractnode.inl" />
-    <None Include="..\..\code\bzmag\engine\geomvertex.inl" />
     <None Include="..\..\code\bzmag\engine\materialnode.inl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -119,7 +119,7 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>bzPythonLib</RootNamespace>
     <ProjectName>engine</ProjectName>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

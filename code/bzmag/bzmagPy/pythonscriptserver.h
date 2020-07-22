@@ -21,7 +21,7 @@ namespace bzmag
         virtual~bzmagPyScriptServer();
         DECLARE_CLASS(bzmagPyScriptServer, ScriptServer);
 
-        static long initialize();
+        static unsigned long long initialize();
 
         virtual bool run(const String& str, String* result);
         virtual bool call(

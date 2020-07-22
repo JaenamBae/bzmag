@@ -110,7 +110,7 @@ bool GeomBaseNode::update()
 
     // 업데이트 할 자식노드가 0이면 즉, 없다면 자신이 최종 노드이다.
     // 이 경우 나의 해드노드의 최종노드로 자신을 설정한다
-    if ((0 == num_child) && head_) {
+    if ((0 == num_child) && head_.valid()) {
         // 해드노드에 최종노드가 자신임을 통지함
         head_->setLastNode(this);
     }
@@ -142,10 +142,10 @@ void GeomBaseNode::onDetachFrom(Node* parent)
 {
     GeomBaseNode* pp = dynamic_cast<GeomBaseNode*>(parent);
     
-    if(head_) {
+    if(head_.valid()) {
         // 현재노드의 부모노드와 현재노드의 해드노드가 같지 않다면
         // 현재노드의 해드노드의 최종 노드를 현재노드의 부모노드로 설정
-        if(head_ != pp) head_->setLastNode(pp);
+        if(head_.get<GeomBaseNode*>() != pp) head_->setLastNode(pp);
 
         // 현재노드의 부모노드와 현재노드의 해드노드가 같다면
         // 현재노드의 해드노드의 최종노드는 없는 것으로...

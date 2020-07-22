@@ -38,7 +38,6 @@ namespace engine
         void movePolygon_with_hole(const Polygon_with_holes_2& lhs, Polygon_with_holes_2& rhs);
         void movePolygon(const Polygon_2& lhs, Polygon_2& rhs);
         void moveCurves(const Curves& lhs, Curves& rhs);
-        void moveVertices(const Vertices& lhs, Vertices& rhs);
 
         bool moveCurve(const X_monotone_curve_2& curve, Curve_2& rotate_curve, const Vector_2& disp);
         Vector_2 displacement();

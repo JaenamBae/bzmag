@@ -10,12 +10,6 @@
     <Filter Include="class\Geometry">
       <UniqueIdentifier>{587a5d43-85fc-4e27-9b23-4da8973b6a61}</UniqueIdentifier>
     </Filter>
-    <Filter Include="class\Geometry\CoordinateSystemNode">
-      <UniqueIdentifier>{a4486ae6-5ca2-4bd4-a6f9-095c4f021bda}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="class\Geometry\VertexNode">
-      <UniqueIdentifier>{6e4a2db8-1279-4600-8742-f6077122dbc1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="class\Geometry\OperationNode">
       <UniqueIdentifier>{f43f3338-7fca-48a7-b00a-9fc561a1f658}</UniqueIdentifier>
     </Filter>
@@ -66,6 +60,12 @@
     </Filter>
     <Filter Include="class\Geometry\PrimitiveNode\CurveNode">
       <UniqueIdentifier>{83621fd7-8510-4de5-aa78-b4076ca0b136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\BoundaryConditions">
+      <UniqueIdentifier>{5f8f1105-13c7-4be6-85cb-407584f941cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="class\CoordinateSystemNode">
+      <UniqueIdentifier>{a4486ae6-5ca2-4bd4-a6f9-095c4f021bda}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -129,14 +129,14 @@
     <ClInclude Include="..\..\code\bzmag\engine\materialnode.h">
       <Filter>class\Materials</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\bzmag\engine\geomvertex.h">
-      <Filter>class\Geometry\VertexNode</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\bzmag\engine\csnode.h">
-      <Filter>class\Geometry\CoordinateSystemNode</Filter>
+      <Filter>class\CoordinateSystemNode</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\bzmag\engine\geomcurvenode.h">
       <Filter>class\Geometry\PrimitiveNode\CurveNode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\bzmag\engine\BCnode.h">
+      <Filter>class\BoundaryConditions</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -233,23 +233,23 @@
     <ClCompile Include="..\..\code\bzmag\engine\materialnode_method.cc">
       <Filter>class\Materials</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\bzmag\engine\geomvertex.cc">
-      <Filter>class\Geometry\VertexNode</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\bzmag\engine\geomvertex_method.cc">
-      <Filter>class\Geometry\VertexNode</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\bzmag\engine\csnode.cc">
-      <Filter>class\Geometry\CoordinateSystemNode</Filter>
+      <Filter>class\CoordinateSystemNode</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\bzmag\engine\csnode_method.cc">
-      <Filter>class\Geometry\CoordinateSystemNode</Filter>
+      <Filter>class\CoordinateSystemNode</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\bzmag\engine\geomcurvenode.cc">
       <Filter>class\Geometry\PrimitiveNode\CurveNode</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\bzmag\engine\geomcurvenode_method.cc">
       <Filter>class\Geometry\PrimitiveNode\CurveNode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\BCnode.cc">
+      <Filter>class\BoundaryConditions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\bzmag\engine\BCnode_method.cc">
+      <Filter>class\BoundaryConditions</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -286,14 +286,14 @@
     <None Include="..\..\code\bzmag\engine\materialnode.inl">
       <Filter>class\Materials</Filter>
     </None>
-    <None Include="..\..\code\bzmag\engine\geomvertex.inl">
-      <Filter>class\Geometry\VertexNode</Filter>
-    </None>
     <None Include="..\..\code\bzmag\engine\csnode.inl">
-      <Filter>class\Geometry\CoordinateSystemNode</Filter>
+      <Filter>class\CoordinateSystemNode</Filter>
     </None>
     <None Include="..\..\code\bzmag\engine\geomcurvenode.inl">
       <Filter>class\Geometry\PrimitiveNode\CurveNode</Filter>
+    </None>
+    <None Include="..\..\code\bzmag\engine\BCnode.inl">
+      <Filter>class\BoundaryConditions</Filter>
     </None>
   </ItemGroup>
 </Project>

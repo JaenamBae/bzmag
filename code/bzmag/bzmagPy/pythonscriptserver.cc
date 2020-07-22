@@ -63,7 +63,7 @@ static struct PyModuleDef moduledef = {
 
 
 //-----------------------------------------------------------------------------
-long bzmagPyScriptServer::initialize()
+unsigned long long bzmagPyScriptServer::initialize()
 {
     // initialize bzmagPy module
 
@@ -106,7 +106,7 @@ long bzmagPyScriptServer::initialize()
 //         bzmagPyScriptServer::s_standAlone_ = false;
 //     }
 //     bzmagPyScriptServer::setSingletonPath("/sys/server/script/python");
-     return (long)g_module;
+     return (unsigned long long)g_module;
 }
 
 

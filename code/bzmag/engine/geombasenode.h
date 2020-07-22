@@ -29,7 +29,6 @@ namespace engine
         typedef std::vector<Traits_2::Point_2> Vertices;
 
     public:
-        //GeomType getGeometryType() const;
         void setReferedCS(Node* cs);
         Node* getReferedCS() const;
         GeomHeadNode* getHeadNode();
@@ -57,12 +56,12 @@ namespace engine
 
     protected:
         //GeomType type_;         // Geometry type
-        GeomHeadNode* head_;    // 헤드노드 포인터
+        Ref<GeomHeadNode> head_;    // 헤드노드 포인터
         
         Polygon_set_2* geometry_;
         Curves curves_;
         Vertices vertices_;
-        
+
         Ref<CSNode> cs_;
         bool bHead_;            // HeadNode 인지?
     };

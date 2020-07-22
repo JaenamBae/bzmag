@@ -33,6 +33,7 @@ namespace engine
         const String& getStartPoint() const;
         const String& getEndPoint() const;
         const String& getMidPoint() const;
+        bool pointOnCurve(float64 x, float64 y) const;
 
     public:
         virtual bool hitTest(float64 x, float64 y);
@@ -63,6 +64,9 @@ namespace engine
 
         // ¡ﬂæ”¡°
         String smid_;
+
+    private:
+        static float64 torr_;
     };
 
 #include "geomcurvenode.inl"

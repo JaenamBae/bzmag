@@ -341,19 +341,18 @@ void GraphicsTestCase::test_MeshInput()
     RefHeadNode head1       = kernel->create("GeomHeadNode",      "/usr5/geom1");
     RefRectNode rect1       = kernel->create("GeomRectNode",      "/usr5/geom1/CreateRectangle");
     RefCoverLineNode cover1 = kernel->create("GeomCoverLineNode", "/usr5/geom1/CreateRectangle/CoverLine");
+    RefSubtractNode sub1    = kernel->create("GeomSubtractNode",  "/usr5/geom1/CreateRectangle/CoverLine/Subtract");
 
     // Curve1
     RefHeadNode head2       = kernel->create("GeomHeadNode",      "/usr5/geom2");
     RefCurveNode curve2     = kernel->create("GeomCurveNode",     "/usr5/geom2/CreateCurve");
-    RefRotateNode rot2      = kernel->create("GeomRotateNode",    "/usr5/geom2/CreateCurve/Rotate");
 
     RefHeadNode head3       = kernel->create("GeomHeadNode",      "/usr5/geom3");
     RefCircleNode circle3   = kernel->create("GeomCircleNode",    "/usr5/geom3/CreateCircle");
-    RefCoverLineNode cover3 = kernel->create("GeomCoverLineNode", "/usr5/geom3/CreateCircle/CoverLine");
-    RefRotateNode rot3      = kernel->create("GeomRotateNode",    "/usr5/geom3/CreateCircle/CoverLine/Rotate");
+    RefRotateNode rotate3   = kernel->create("GeomRotateNode",    "/usr5/geom3/CreateCircle/Rotate");
+    RefCoverLineNode cover3 = kernel->create("GeomCoverLineNode", "/usr5/geom3/CreateCircle/Rotate/CoverLine");
 
-    // Boolean
-    RefSubtractNode sub1    = kernel->create("GeomSubtractNode",  "/usr5/geom1/CreateRectangle/CoverLine/Subtract");
+
 
     // CS1
     RefCSNode cs1           = kernel->create("CSNode",            "/cs/cs1");
@@ -361,15 +360,17 @@ void GraphicsTestCase::test_MeshInput()
 
     rect1->setParameters("-10, -10", "20", "20");
     curve2->setParameters("0, 0", "0, 6");
-    rot2->setAngle("_pi/3");
-    circle3->setParameters("0, 0", "10.00000000000001");
-    rot3->setAngle("_pi/2");
+    circle3->setParameters("0, 0", "10.00001");
+    rotate3->setAngle("_pi/10");
+    cs1->setParameters("0, 0", "_pi/2");
     sub1->attach(head3);
-    //rect1->setReferedCS(cs1);
+    rect1->setReferedCS(cs1);
+
+
+    curve2->pointOnCurve(0, 4);
 
     GeomToPolyTriangle* conv = GeomToPolyTriangle::instance();
     conv->makePolyStructures("/usr5");
-    int nnn  = conv->getNumberOfPolyHoles();
 
     std::list<Vector2> result;
     conv->getPointsOnHoles(result);

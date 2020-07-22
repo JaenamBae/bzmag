@@ -140,25 +140,6 @@ void GeomRotateNode::rotateCurves(const Curves& lhs, Curves& rhs)
     }
 }
 
-
-//----------------------------------------------------------------------------
-void GeomRotateNode::rotateVertices(const Vertices& lhs, Vertices& rhs)
-{
-    rhs.clear();
-    Transformation transform = rotate_transform();
-
-    Vertices::iterator it;
-    for (it = vertices_.begin(); it != vertices_.end(); ++it)
-    {
-        Traits_2::Point_2 v = *it;
-        Point_2 vv(CGAL::to_double(v.x()), CGAL::to_double(v.y()));
-        Point_2 rotate_vv = transform(vv);
-
-        rhs.emplace_back(Traits_2::Point_2(rotate_vv.x(), rotate_vv.y()));
-    }
-}
-
-
 //----------------------------------------------------------------------------
 bool GeomRotateNode::rotateCurve(const X_monotone_curve_2& curve, Curve_2& rotate_curve, const Transformation& transform)
 {
@@ -166,16 +147,6 @@ bool GeomRotateNode::rotateCurve(const X_monotone_curve_2& curve, Curve_2& rotat
 
     Traits_2::Point_2 source = arc.source();
     Traits_2::Point_2 target = arc.target();
-
-    CoordNT ss_x = source.x() * transform.m(0, 0) + source.y() * transform.m(0, 1) + transform.m(0, 2);
-    CoordNT ss_y = source.x() * transform.m(1, 0) + source.y() * transform.m(1, 1) + transform.m(1, 2);
-    Traits_2::Point_2 new_source(ss_x, ss_y);
-
-    CoordNT tt_x = target.x() * transform.m(0, 0) + target.y() * transform.m(0, 1) + transform.m(0, 2);
-    CoordNT tt_y = target.x() * transform.m(1, 0) + target.y() * transform.m(1, 1) + transform.m(1, 2);
-    Traits_2::Point_2 new_target(tt_x, tt_y);
-
-    //X_monotone_curve_2 aaa(arc.supporting_circle(), new_source, new_target, arc.orientation());
 
     // Debuging과 Traits_2::Point_2 --> Point_2 변환을 위해 필요함
     Vector2 vs(CGAL::to_double(source.x()), CGAL::to_double(source.y()));
@@ -197,13 +168,6 @@ bool GeomRotateNode::rotateCurve(const X_monotone_curve_2& curve, Curve_2& rotat
         // Info of supporint circle
         Circle_2 supporing_circle = arc.supporting_circle();
         Point_2 center = supporing_circle.center();
-
-
-        center = transform(center);
-        Circle_2 trans_circle(center, supporing_circle.squared_radius(), supporing_circle.orientation());
-        X_monotone_curve_2 trans_curve(trans_circle, new_source, new_target, arc.orientation());
-
-
         Vector2 vc(CGAL::to_double(center.x()), CGAL::to_double(center.y()));
         double radii = sqrt(CGAL::to_double(supporing_circle.squared_radius()));
 
@@ -248,13 +212,6 @@ bool GeomRotateNode::rotateCurve(const X_monotone_curve_2& curve, Curve_2& rotat
     else if (arc.is_linear()) {
         p1 = transform(p1);
         p2 = transform(p2);
-
-        Line_2 tran_line = transform(arc.supporting_line());
-        X_monotone_curve_2 trans_curve(tran_line, new_source, new_target);
-
-        Vector2 ttp1(CGAL::to_double(new_source.x()), CGAL::to_double(new_source.y()));
-        Vector2 ttp2(CGAL::to_double(new_target.x()), CGAL::to_double(new_target.y()));
-
 
         // 아래줄이 멍청한것 같지만 필요함 (CGAL 예외방지 차원)...
         Vector2 tp1(CGAL::to_double(p1.x()), CGAL::to_double(p1.y()));
@@ -349,20 +306,6 @@ bool GeomRotateNode::update()
                     new_geometry->insert(rhs);
             }
             geometry_ = new_geometry;
-        }
-
-        else if (curves.size() > 0)
-        {
-            Curves rotate_curves;
-            rotateCurves(curves, rotate_curves);
-            curves_ = rotate_curves;
-        }
-
-        else if (vertices.size() > 0)
-        {
-            Vertices rotate_vertices;
-            rotateVertices(vertices, rotate_vertices);
-            vertices_ = rotate_vertices;
         }
     }
 

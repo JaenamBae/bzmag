@@ -29,7 +29,6 @@ namespace engine
 
     private:
         bool check_closed(const Curves& curves);
-        X_monotone_curve_2 regenerate_curve(const X_monotone_curve_2& curve);
 
     public:
         static void bindMethod();

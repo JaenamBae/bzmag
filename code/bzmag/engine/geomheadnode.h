@@ -7,20 +7,23 @@ Author : Jaenam Bae (jaenam@dongyang.ac.kr)
 */
 
 #include "geombasenode.h"
-#include "materialnode.h"
 #include "core/color.h"
-
 
 namespace bzmag
 {
 namespace engine
 {
+	class BCNode;
+	class MaterialNode;
     class GeomHeadNode : public GeomBaseNode
     {
     public:
         GeomHeadNode();
         virtual ~GeomHeadNode();
         DECLARE_CLASS(GeomHeadNode, GeomBaseNode);
+
+		// Curves 의 인덱스, 경계조건
+		typedef std::map<uint64, Ref<BCNode>> BCs;	// Boundary Conditions
 
     public:
         // 컬러설정
@@ -50,6 +53,9 @@ namespace engine
         void setMaterialNode(Node* cs);
         Node* getMaterialNode() const;
 
+		// 경계조건 설정
+		bool applyBC(uint64 index, BCNode* bc);
+
 
     public:
         virtual Polygon_set_2* getPolyset();
@@ -75,9 +81,15 @@ namespace engine
         Color color_;
         bool hide_;
         int32 num_elements_;
-        GeomBaseNode* lastNode_;// 최종 연산된 Geometry 노드
 
+		// 최종 연산된 Geometry 노드
+        Ref<GeomBaseNode> lastNode_;
+
+		// 참조 재질
         Ref<MaterialNode> material_;
+
+		// 경계조건
+		BCs BCs_;
 
     public:
         static float64 tolerance_;

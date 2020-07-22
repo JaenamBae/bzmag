@@ -217,7 +217,7 @@
     <ProjectGuid>{76E31BE3-B158-4C2E-AA18-77AB875C9498}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>libagg</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

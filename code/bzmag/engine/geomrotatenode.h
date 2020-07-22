@@ -33,7 +33,6 @@ namespace engine
         void rotatePolygon_with_hole(const Polygon_with_holes_2& lhs, Polygon_with_holes_2& rhs);
         void rotatePolygon(const  Polygon_2& lhs, Polygon_2& rhs);
         void rotateCurves(const Curves& lhs, Curves& rhs);
-        void rotateVertices(const Vertices& lhs, Vertices& rhs);
 
         bool rotateCurve(const X_monotone_curve_2& curve, Curve_2& rotate_curve, const Transformation& transform);
         Transformation rotate_transform();

@@ -20,7 +20,7 @@ namespace engine
 
     public:
         // how to change the list to set? (duplicate problem)
-        typedef std::list<GeomCloneFromNode*> FromNodes;
+        typedef std::list<Ref<GeomCloneFromNode>> FromNodes;
         typedef FromNodes::iterator FromIterator;
 
         GeomCloneToNode();

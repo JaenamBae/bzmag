@@ -34,7 +34,7 @@
     <ProjectGuid>{1069C220-EB40-4BB5-978B-6746923CF21A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>winGraphics</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
